@@ -6,14 +6,24 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     color: white;
+    text-decoration: none;
 }
 
 body{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 100vh;
     background-color: black;
+}
+
+.rodape{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background: ;
 }
 
 .container{
@@ -23,12 +33,20 @@ body{
     border-radius: 10px;
     padding: 30px 40px;
     box-shadow: 0px 0px 94px -21px rgba(245,12,245,1);
+    color: white;
+    margin: 100px;
 }
+
+
 
 .container h1{
     font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.container a{
+    color: white;
 }
 
 .input-box{
@@ -47,4 +65,14 @@ body{
     font-size: 16px;
     color: white;
     padding: 20px 45px 20px 20px;
+}
+
+.container button{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 0px 20px;
 }

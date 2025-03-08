@@ -24,6 +24,7 @@ body{
     width: 100%;
     padding: 5px;
     background: rgba(245, 12, 245, 0.562);
+    margin: 0px;
 }
 
 .container{
@@ -66,14 +67,52 @@ body{
     font-size: 16px;
     color: white;
     padding: 20px 45px 20px 20px;
+    border-radius: 10px;
+}
+.input-box input::placeholder{
+    color: white
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+    top: 50%;	
+    transform: translateY(-50%);
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0px 15px;
 }
 
-.container button{
-    width: 50%;
+.remember-forgot label input{
+    accent-color: rgba(245,12,245,1);
+}
+ .remember-forgot a:hover{
+    text-decoration: underline;
+    color: rgba(245,12,245,1);
+ }
+
+ .login{
+    width: 100%;
     height: 50px;
-    text-align: center;
-    justify-content: center;
-    background-color: black;
+    color: black;
+    background: white;
     border: 2px solid rgba(255, 255, 255, .2);
-    padding: 0px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+ }
+
+ .login:hover{
+    background: black;
+    color: white;
+    border: 2px solid rgba(245,12,245,1);
+    transition: 0.5s;
+ }
+
+.register-link{
+    text-align: center;
+    margin-top: 20px 0 15px;
 }

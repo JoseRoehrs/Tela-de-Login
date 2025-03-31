@@ -7,39 +7,31 @@
     font-family: "Poppins", sans-serif;
     color: white;
     text-decoration: none;
+    backdrop-filter: blur(8px);
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black;
+    width: 100%;
+    background: url(img/fundo.jpg);
+    background-attachment: fixed;
+    margin: 0;
+    background-size: cover;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 32px;
-    background: rgba(245, 12, 245, 0.562);
-    margin: 0px;
-    align-items: center;
-    max-height: 100px;
-}
-
-.horas{
-    display: flex;
-    flex-direction: row;
-}
 
 .container{
     width: 420px;
-    background-color: rgba(10, 10, 10, 0.9);
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 30px 40px;
-    box-shadow: 0px 0px 94px -21px rgba(245,12,245,1);
+    box-shadow: 0px 0px 94px -21px rgb(0, 0, 0);
     color: white;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 
 
@@ -48,6 +40,7 @@ body{
     font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
+    color: black;
 }
 
 .container a{
@@ -59,29 +52,31 @@ body{
     width: 100;
     height: 50px;
     margin: 30px 0px;
+
 }
 
 .input-box input{
     width: 100%;
     height: 100%;
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    background-color: rgb(238, 238, 238);
+    border: 2px solid rgba(66, 65, 65, .2);
     outline: none;
     font-size: 16px;
-    color: white;
+    color: black;
     padding: 20px 45px 20px 20px;
     border-radius: 10px;
 }
 .input-box input::placeholder{
-    color: white
+    color: rgb(66, 65, 65);
 }
 .input-box i{
     position: absolute;
     right: 20px;
-    color: white;
+    color: black;
     font-size: 20px;
     top: 50%;	
     transform: translateY(-50%);
+    background: transparent;
 }
 .remember-forgot{
     display: flex;
@@ -90,11 +85,11 @@ body{
 }
 
 .remember-forgot label input{
-    accent-color: rgba(245,12,245,1);
+    accent-color: rgb(66, 65, 65);
 }
- .remember-forgot a:hover{
+.remember-forgot a:hover{
     text-decoration: underline;
-    color: rgba(245,12,245,1);
+    color: rgb(66, 65, 65);
  }
 
  .login{
@@ -102,57 +97,20 @@ body{
     height: 50px;
     color: black;
     background: white;
-    border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     cursor: pointer;
     font-weight: 600;
+    font-size: 1.5rem;
+    border: 2px solid rgba(66, 65, 65, .2)
  }
 
  .login:hover{
-    background: black;
-    color: white;
-    border: 2px solid rgba(245,12,245,1);
-    transition: 0.5s;
+    border-color: black;
+    transform: translateY(-5px) scale(1.03);
+    transition: all 0.5s ease;
  }
 
 .register-link{
     text-align: center;
     margin-top: 20px 0 15px;
 }
-
-.relogio{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    width: 500px;
-    height: 75px;
-}
-
-.relogio span{
-    font-size: 35px;
-}
-
-.relogio span.tempo{
-    font-size: 15px;
-}
-
-.clock-card{
-    background-color: black;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
-    border-radius: 10px;
-    padding: 40px 1px;
-    width: 150px;
-    height: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.titulo{
-    background-color: black;
-    border-radius: 10px;
-    padding: 5px 30px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
-}
-

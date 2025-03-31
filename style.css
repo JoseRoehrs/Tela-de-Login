@@ -7,7 +7,7 @@
     font-family: "Poppins", sans-serif;
     color: white;
     text-decoration: none;
-    backdrop-filter: blur(8px);
+    
 }
 
 body{
@@ -18,9 +18,10 @@ body{
     height: 100vh;
     width: 100%;
     background: url(img/fundo.jpg);
-    background-attachment: fixed;
+    background-attachment:initial;
     margin: 0;
     background-size: cover;
+    backdrop-filter: blur(8px);
 }
 
 
@@ -31,7 +32,7 @@ body{
     padding: 30px 40px;
     box-shadow: 0px 0px 94px -21px rgb(0, 0, 0);
     color: white;
-    margin: 0px auto;
+    margin: 0px 30px;
 }
 
 
@@ -113,4 +114,27 @@ body{
 .register-link{
     text-align: center;
     margin-top: 20px 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .input-box {
+        margin: 20px 0;
+    }
+
+    .login {
+        font-size: 1.2rem;
+    }
+
+    .register-link {
+        font-size: 14px;
+    }
 }
